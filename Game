@@ -4,8 +4,15 @@ def run():
     print("Welcome to the database. Please log in. If you are new to the commands, type \"syntax()\" to continue.")
 
 def kill():
-    if permission > 0:
+    if permission > 9:
         print("Database destroyed")
     else:
-        print("You do not have permission to use the following command on this databaase: /kill")
+        print("You do not have permission to use the following command on this database: /kill")
+def syntax():
+    if permission == 0:
+        print("Commands for the Omega Database:\nlogin(username, password) permission level required: 0\npermlevel(): returns you're current permission level. permission level required: any")
+def permlevel():
+    print("You're permission level is")
+    print(permission)
+
 run()
