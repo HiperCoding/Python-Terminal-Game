@@ -1,0 +1,11 @@
+permission = 0
+
+def run():
+    print("Welcome to the database. Please log in. If you are new to the commands, type \"syntax()\" to continue.")
+
+def kill():
+    if permission > 0:
+        print("Database destroyed")
+    else:
+        print("You do not have permission to use the following command on this databaase: /kill")
+run()
